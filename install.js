@@ -24,10 +24,10 @@ connection.query(`CREATE TABLE jobs (
     id INT AUTO_INCREMENT PRIMARY KEY,
     title VARCHAR(100),
     workplace VARCHAR(100),
-    employer VARCHAR(10),
+    employer VARCHAR(100),
     startdate VARCHAR(100),
     enddate VARCHAR(100),
-    description VARCHAR(250),
+    description VARCHAR(500),
     created DATETIME DEFAULT CURRENT_TIMESTAMP)`, (err, results) => {
     if (err) throw err;
     console.log("Table created!")
